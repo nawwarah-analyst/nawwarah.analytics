@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nawwarah Analytics - Business Clarity Report</title>
-    <!-- Tailwind CSS for modern, clean, and responsive design -->
+    <!-- Tailwind CSS for clean, premium typography and layouts -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -19,38 +19,37 @@
             }
         }
     </script>
-    <!-- FontAwesome for clean icons -->
+    <!-- FontAwesome for professional layout icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        .lang-en, .lang-ms { transition: all 0.3s ease; }
-        /* Smooth state transitions */
+        .lang-en, .lang-ms { transition: all 0.2s ease; }
         [data-lang="en"] .lang-ms { display: none !important; }
         [data-lang="ms"] .lang-en { display: none !important; }
     </style>
 </head>
 <body data-lang="en" class="bg-slate-50 text-slate-800 font-sans antialiased">
 
-    <!-- HEADER / NAVIGATION -->
+    <!-- HEADER & INTERACTIVE LANGUAGE TOGGLE -->
     <header class="sticky top-0 z-50 bg-white border-b border-slate-100 shadow-sm">
         <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-            <!-- Business Logo Link -->
+            <!-- Business Brand Logo -->
             <a href="#" class="flex items-center">
                 <img src="Logo Nawwarah Analytics.png" alt="Logo Nawwarah Analytics.png" class="h-12 md:h-16 object-contain">
             </a>
             
-            <!-- Interactive Language Switcher Buttons -->
-            <div class="flex items-center space-x-2 bg-slate-100 p-1 rounded-full text-sm font-medium shadow-inner">
-                <button onclick="setLanguage('ms')" id="btn-ms" class="px-3 py-1.5 rounded-full transition-all duration-200 hover:text-brandTeal">Bahasa Melayu</button>
-                <button onclick="setLanguage('en')" id="btn-en" class="px-3 py-1.5 rounded-full transition-all duration-200 hover:text-brandTeal">English</button>
+            <!-- Quick Language Switcher -->
+            <div class="flex items-center space-x-1 bg-slate-100 p-1 rounded-full text-xs md:text-sm font-medium shadow-inner">
+                <button onclick="setLanguage('ms')" id="btn-ms" class="px-3 py-1.5 rounded-full transition-all duration-200">Bahasa Melayu</button>
+                <button onclick="setLanguage('en')" id="btn-en" class="px-3 py-1.5 rounded-full transition-all duration-200">English</button>
             </div>
         </div>
     </header>
 
-    <!-- HERO SECTION -->
-    <section class="relative bg-gradient-to-b from-white to-slate-50 py-16 md:py-24 overflow-hidden">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <!-- Tagline -->
-            <span class="inline-block px-4 py-2 bg-teal-50 text-brandTeal border border-teal-100 rounded-full font-semibold text-sm md:text-base mb-6 tracking-wide shadow-sm">
+    <!-- HERO PROFILE & TAGLINE SECTION -->
+    <section class="relative bg-gradient-to-b from-white to-slate-50 py-16 md:py-24 text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <!-- Business Tagline Blueprint -->
+            <span class="inline-block px-4 py-2 bg-teal-50 text-brandTeal border border-teal-100 rounded-full font-bold text-sm md:text-base mb-6 tracking-wide shadow-sm">
                 <span class="lang-en">"You run the business, I'll untangle the mess"</span>
                 <span class="lang-ms">"Anda uruskan bisnes, biar saya selesaikan kekusutan data"</span>
             </span>
@@ -64,171 +63,182 @@
                 <span class="lang-en">We read your business numbers and tell you what is actually happening — in plain language, so you can make faster decisions without staring at Excel.</span>
                 <span class="lang-ms">Kami baca data bisnes anda setiap bulan dan beritahu apa yang sebenarnya berlaku — dalam bahasa biasa, supaya anda boleh buat keputusan lebih cepat tanpa penat tengok Excel.</span>
             </p>
+            
+            <!-- Immediate Questionnaire Call to Action Anchor -->
+            <div class="mt-8">
+                <a href="#qualifier" class="inline-flex items-center text-brandTeal font-semibold text-sm hover:underline">
+                    <span class="lang-en">See if your business qualifies below</span>
+                    <span class="lang-ms">Semak kelayakan perniagaan anda di bawah</span>
+                    <i class="fa-solid fa-arrow-down ml-2 animate-bounce"></i>
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-- THE PROBLEM SECTION -->
+    <!-- BUSINESS PROBLEMS WE SOLVE SECTION -->
     <section class="py-16 bg-white border-t border-b border-slate-100">
         <div class="max-w-5xl mx-auto px-4">
             <div class="text-center mb-12">
                 <h2 class="text-2xl md:text-3xl font-bold text-brandDark">
-                    <span class="lang-en">Are These Invisible Bottlenecks Holding You Back?</span>
-                    <span class="lang-ms">Adakah Masalah Halimunan Ini Melambatkan Bisnes Anda?</span>
+                    <span class="lang-en">The Pain Points We Eliminate</span>
+                    <span class="lang-ms">Masalah Kritikal Yang Kami Selesaikan</span>
                 </h2>
                 <div class="w-16 h-1 bg-brandGold mx-auto mt-4 rounded"></div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Problem 1 -->
+                <!-- Pain Point 1 -->
                 <div class="flex p-5 bg-slate-50 rounded-xl border border-slate-100 shadow-sm">
                     <div class="text-red-500 text-xl mr-4 mt-1"><i class="fa-solid fa-circle-xmark"></i></div>
                     <div>
-                        <p class="font-medium text-slate-700 lang-en">Drowning in 3 to 5 Excel files open every week, but still lack a clear picture of performance.</p>
-                        <p class="font-medium text-slate-700 lang-ms">Buka 3 hingga 5 fail Excel setiap minggu, namun masih tiada gambaran jelas tentang prestasi.</p>
+                        <p class="font-medium text-slate-700 lang-en">Opening 3 to 5 Excel files every single week, but still lacking a clear performance picture.</p>
+                        <p class="font-medium text-slate-700 lang-ms">Membuka 3 hingga 5 fail Excel setiap minggu, namun masih tiada gambaran jelas tentang prestasi.</p>
                     </div>
                 </div>
-                <!-- Problem 2 -->
+                <!-- Pain Point 2 -->
                 <div class="flex p-5 bg-slate-50 rounded-xl border border-slate-100 shadow-sm">
                     <div class="text-red-500 text-xl mr-4 mt-1"><i class="fa-solid fa-circle-xmark"></i></div>
                     <div>
-                        <p class="font-medium text-slate-700 lang-en">Hours spent updating messy spreadsheets, with no clear answer to "Am I making money this month?"</p>
-                        <p class="font-medium text-slate-700 lang-ms">Habiskan berjam-jam mengemas kini spreadsheet, tapi tak tahu jawapan "Untung ke tidak bulan ni?"</p>
+                        <p class="font-medium text-slate-700 lang-en">Spending hours updating spreadsheets, without a solid answer to "Am I making money?"</p>
+                        <p class="font-medium text-slate-700 lang-ms">Menghabiskan berjam-jam mengemas kini spreadsheet, tanpa jawapan pasti "Adakah saya untung?"</p>
                     </div>
                 </div>
-                <!-- Problem 3 -->
+                <!-- Pain Point 3 -->
                 <div class="flex p-5 bg-slate-50 rounded-xl border border-slate-100 shadow-sm">
                     <div class="text-red-500 text-xl mr-4 mt-1"><i class="fa-solid fa-circle-xmark"></i></div>
                     <div>
-                        <p class="font-medium text-slate-700 lang-en">Critical problems like slow-moving stock, shrinking margins, or dropping orders remain completely invisible.</p>
-                        <p class="font-medium text-slate-700 lang-ms">Masalah kritikal seperti produk lembap, margin mengecil, atau order menurun kekal tidak kelihatan.</p>
+                        <p class="font-medium text-slate-700 lang-en">Critical risks like slow-moving products, shrinking margins, or dropping orders stay hidden.</p>
+                        <p class="font-medium text-slate-700 lang-ms">Masalah tersembunyi seperti produk lembap, margin mengecil, atau order menurun kekal halimunan.</p>
                     </div>
                 </div>
-                <!-- Problem 4 -->
+                <!-- Pain Point 4 -->
                 <div class="flex p-5 bg-slate-50 rounded-xl border border-slate-100 shadow-sm">
                     <div class="text-red-500 text-xl mr-4 mt-1"><i class="fa-solid fa-circle-xmark"></i></div>
                     <div>
-                        <p class="font-medium text-slate-700 lang-en">No budget for a full-time financial analyst, no time to master Power BI, and no data expert to ask.</p>
-                        <p class="font-medium text-slate-700 lang-ms">Tiada bajet untuk panggil analis sepenuh masa, tiada masa belajar Power BI, dan tiada pakar untuk dirujuk.</p>
+                        <p class="font-medium text-slate-700 lang-en">No budget for a full-time analytics team, and zero hours left to learn complex software tools.</p>
+                        <p class="font-medium text-slate-700 lang-ms">Tiada bajet untuk panggil analis sepenuh masa, dan tiada masa untuk belajar perisian rumit.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- OUR SERVICE / HOW IT WORKS SECTION -->
+    <!-- SERVICE DEFINITION & FUNCTION SECTION -->
     <section class="py-16 bg-slate-50">
         <div class="max-w-5xl mx-auto px-4">
             <div class="text-center mb-12">
                 <h2 class="text-2xl md:text-3xl font-bold text-brandDark">
-                    <span class="lang-en">The Solution: Done-For-You Monthly Reporting</span>
-                    <span class="lang-ms">Solusi: Servis Pelaporan Bulanan Siap-Sedia</span>
+                    <span class="lang-en">How Our Done-For-You Service Functions</span>
+                    <span class="lang-ms">Bagaimana Servis Kami Berfungsi</span>
                 </h2>
-                <p class="text-slate-500 mt-2">
-                    <span class="lang-en">Simple function. High impact. Pay for clarity, not software.</span>
-                    <span class="lang-ms">Fungsi mudah. Impak tinggi. Anda bayar untuk kejelasan, bukan perisian.</span>
+                <p class="text-slate-500 mt-2 text-sm md:text-base">
+                    <span class="lang-en">A highly automated, hands-off reporting relationship built for busy owners.</span>
+                    <span class="lang-ms">Aliran kerja mudah dan sistematik yang direka khas untuk pemilik bisnes yang sibuk.</span>
                 </p>
             </div>
 
-            <!-- 3-Step Simple Process Loop -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 text-center relative">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Step 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 text-center">
                     <div class="w-12 h-12 bg-teal-100 text-brandTeal rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4">1</div>
                     <h3 class="font-bold text-lg mb-2 text-brandDark">
-                        <span class="lang-en">Send Your Data</span>
-                        <span class="lang-ms">Hantar Data Anda</span>
+                        <span class="lang-en">Secure File Transfer</span>
+                        <span class="lang-ms">Hantar Fail Data</span>
                     </h3>
-                    <p class="text-slate-600 text-sm">
-                        <span class="lang-en">Every month, drop your sales or operational files via a secure link. We do all the heavy lifting and data cleaning.</span>
-                        <span class="lang-ms">Setiap bulan, serahkan fail jualan atau operasi anda. Kami selesaikan pembersihan dan susunan data yang berserabut.</span>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        <span class="lang-en">At the start of the month, secure your raw sales or operational file export. We clean and format your data records completely.</span>
+                        <span class="lang-ms">Setiap awal bulan, hantar eksport fail jualan atau operasi anda. Kami akan bersihkan susunan data yang berserabut bagi pihak anda.</span>
                     </p>
                 </div>
 
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 text-center relative">
+                <!-- Step 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 text-center">
                     <div class="w-12 h-12 bg-teal-100 text-brandTeal rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4">2</div>
                     <h3 class="font-bold text-lg mb-2 text-brandDark">
-                        <span class="lang-en">Get Plain Insights</span>
-                        <span class="lang-ms">Dapatkan Laporan Jelas</span>
+                        <span class="lang-en">Professional Analysis</span>
+                        <span class="lang-ms">Analisis Pakar</span>
                     </h3>
-                    <p class="text-slate-600 text-sm">
-                        <span class="lang-en">Receive a precise 1-page report highlighting exactly what happened, hidden risks to watch out for, and immediate actions to take.</span>
-                        <span class="lang-ms">Terima laporan ringkas 1 halaman yang memberitahu apa yang terjadi, risiko halimunan, dan tindakan segera yang perlu dibuat.</span>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        <span class="lang-en">We lock down the metrics driving your business, filtering out non-essential numbers to find hidden execution risks.</span>
+                        <span class="lang-ms">Kami kenal pasti metrik teras yang memacu pertumbuhan atau memakan keuntungan, menapis segala data yang tidak penting.</span>
                     </p>
                 </div>
 
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 text-center relative">
+                <!-- Step 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 text-center">
                     <div class="w-12 h-12 bg-teal-100 text-brandTeal rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4">3</div>
                     <h3 class="font-bold text-lg mb-2 text-brandDark">
-                        <span class="lang-en">30-Min Walkthrough</span>
-                        <span class="lang-ms">Sesi Panduan 30 Minit</span>
+                        <span class="lang-en">Asynchronous Delivery</span>
+                        <span class="lang-ms">Penghantaran Pantas</span>
                     </h3>
-                    <p class="text-slate-600 text-sm">
-                        <span class="lang-en">We jump on a focused 30-minute review call or share crisp voice notes to review strategy together, cutting out all tech jargon.</span>
-                        <span class="lang-ms">Kita telusuri data bersama dalam panggilan 30 minit atau hantaran mesej suara berstruktur untuk keputusan pantas tanpa jargon rumit.</span>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        <span class="lang-en">Receive your report straight to your messaging inbox accompanied by structured audio insights outlining key actions.</span>
+                        <span class="lang-ms">Terima laporan kejelasan terus ke peti mesej anda bersama hantaran nota suara berstruktur tentang tindakan seterusnya.</span>
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- WHAT THEY WILL GET SECTION -->
+    <!-- WHAT CLIENTS WILL GET SECTION -->
     <section class="py-16 bg-brandDark text-white">
         <div class="max-w-4xl mx-auto px-4">
             <div class="text-center mb-12">
                 <h2 class="text-2xl md:text-3xl font-bold">
-                    <span class="lang-en">What You Will Get Every Month</span>
-                    <span class="lang-ms">Apa Yang Anda Akan Dapat Setiap Bulan</span>
+                    <span class="lang-en">What You Receive Every Single Month</span>
+                    <span class="lang-ms">Apa Yang Anda Akan Terima Setiap Bulan</span>
                 </h2>
                 <div class="w-12 h-1 bg-brandGold mx-auto mt-4 rounded"></div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
                 <div class="flex items-start space-x-3">
                     <span class="text-brandGold text-xl"><i class="fa-solid fa-square-check"></i></span>
                     <div>
-                        <h4 class="font-semibold text-lg"><span class="lang-en">1-Page Clarity Document</span><span class="lang-ms">Dokumen Kejelasan 1 Halaman</span></h4>
-                        <p class="text-slate-300 text-sm mt-1"><span class="lang-en">Beautifully formatted in Canva, engineered to read completely in under 5 minutes.</span><span class="lang-ms">Direka kemas di Canva, dicipta khusus untuk difahami dalam masa kurang dari 5 minit.</span></p>
+                        <h4 class="font-semibold text-lg"><span class="lang-en">1-Page Business Clarity Report</span><span class="lang-ms">Laporan Kejelasan 1 Halaman</span></h4>
+                        <p class="text-slate-300 text-sm mt-1"><span class="lang-en">Clean layout that gives you your full performance breakdown in under 5 minutes. No complex dashboards to learn.</span><span class="lang-ms">Paparan kemas yang memberikan ringkasan prestasi dalam masa kurang 5 minit. Tiada perisian rumit yang perlu dipelajari.</span></p>
                     </div>
                 </div>
                 <div class="flex items-start space-x-3">
                     <span class="text-brandGold text-xl"><i class="fa-solid fa-square-check"></i></span>
                     <div>
-                        <h4 class="font-semibold text-lg"><span class="lang-en">5 Core KPIs Identified</span><span class="lang-ms">5 KPI Utama Dikenal Pasti</span></h4>
-                        <p class="text-slate-300 text-sm mt-1"><span class="lang-en">We track down the metrics driving growth or eating profits so you don't guess.</span><span class="lang-ms">Kami jejaki metrik sebenar yang memacu pertumbuhan atau memakan untung syarikat.</span></p>
+                        <h4 class="font-semibold text-lg"><span class="lang-en">Up to 5 Tailored KPIs</span><span class="lang-ms">Sehingga 5 KPI Utama Bisnes</span></h4>
+                        <p class="text-slate-300 text-sm mt-1"><span class="lang-en">Deep logical checks on specific categories, volume patterns, seasonal trends, and target operational baselines.</span><span class="lang-ms">Semakan logik mendalam pada kategori produk, corak jualan, trend bermusim, dan sasaran operasi perniagaan anda.</span></p>
                     </div>
                 </div>
                 <div class="flex items-start space-x-3">
                     <span class="text-brandGold text-xl"><i class="fa-solid fa-square-check"></i></span>
                     <div>
-                        <h4 class="font-semibold text-lg"><span class="lang-en">Direct Action Recommendations</span><span class="lang-ms">Cadangan Tindakan Serta-Merta</span></h4>
-                        <p class="text-slate-300 text-sm mt-1"><span class="lang-en">No theoretical observations—just practical actions on stock levels, products, and margins.</span><span class="lang-ms">Bukan teori kosong — hanya tindakan praktikal berkenaan stok, produk, dan margin keuntungan anda.</span></p>
+                        <h4 class="font-semibold text-lg"><span class="lang-en">Direct Action Recommendations</span><span class="lang-ms">Saranan Tindakan Praktikal</span></h4>
+                        <p class="text-slate-300 text-sm mt-1"><span class="lang-en">Clear, straightforward strategic steps detailing exactly what decisions to make next with your products and cash flow.</span><span class="lang-ms">Langkah strategik yang jelas tentang keputusan segera yang perlu dibuat terhadap stok, produk, dan aliran tunai anda.</span></p>
                     </div>
                 </div>
                 <div class="flex items-start space-x-3">
                     <span class="text-brandGold text-xl"><i class="fa-solid fa-square-check"></i></span>
                     <div>
-                        <h4 class="font-semibold text-lg"><span class="lang-en">Private Strategy Walkthrough</span><span class="lang-ms">Sesi Panduan Strategi Peribadi</span></h4>
-                        <p class="text-slate-300 text-sm mt-1"><span class="lang-en">Direct WhatsApp review session to build high operational trust with a skilled analyst partner.</span><span class="lang-ms">Sesi semakan terus menerusi WhatsApp untuk membina keyakinan operasi bersama pakar analis anda.</span></p>
+                        <h4 class="font-semibold text-lg"><span class="lang-en">Short Audio Briefings</span><span class="lang-ms">Nota Ringkasan Mesej Suara</span></h4>
+                        <p class="text-slate-300 text-sm mt-1"><span class="lang-en">A brief, high-value 2-3 minute audio walk-through from your analyst pointing out critical shifts without using complex tech terms.</span><span class="lang-ms">Nota suara ringkas 2-3 minit daripada pakar analis anda yang menerangkan perubahan kritikal tanpa sebarang istilah teknikal.</span></p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- INTERACTIVE LEAD CALL TO ACTION -->
-    <section class="py-16 bg-white text-center">
+    <!-- LEAD FILTER & QUALIFIER QUESTIONNAIRE INTERACTION -->
+    <section id="qualifier" class="py-16 bg-white text-center">
         <div class="max-w-3xl mx-auto px-4">
             <div class="bg-slate-50 border border-slate-100 rounded-2xl p-8 md:p-12 shadow-md">
                 <h2 class="text-2xl md:text-3xl font-bold text-brandDark mb-4">
-                    <span class="lang-en">Not sure if your business data is ready for this?</span>
-                    <span class="lang-ms">Masih ragu-ragu sama ada data perniagaan anda sedia atau tidak?</span>
+                    <span class="lang-en">Not sure if your data is ready for professional analysis?</span>
+                    <span class="lang-ms">Ragu-ragu sama ada data perniagaan anda bersedia untuk dianalisis?</span>
                 </h2>
                 <p class="text-slate-600 mb-8 max-w-xl mx-auto leading-relaxed">
-                    <span class="lang-en">Don't guess! Answer just a few quick questions about your operations, and we will instantly assess if we can unpack your data for fast growth.</span>
-                    <span class="lang-ms">Jangan teka-teka! Jawab beberapa soalan ringkas tentang operasi anda, dan kami akan menilai kesediaan data anda untuk melonjakkan bisnes serta-merta.</span>
+                    <span class="lang-en">We maintain strict entry criteria to ensure we only deliver high-impact results. Spend 60 seconds answering our baseline screening form, and we will evaluate your setup instantly.</span>
+                    <span class="lang-ms">Kami mengamalkan kriteria tapisan ketat untuk memastikan hasil impak tinggi. Ambil masa 60 saat untuk menjawab borang penilaian kami, dan kami akan menilai struktur data anda serta-merta.</span>
                 </p>
                 <a href="https://forms.gle/8ZjVMcTsTm74nCuC8" target="_blank" class="inline-flex items-center justify-center px-8 py-4 bg-brandTeal hover:bg-opacity-90 text-white font-bold text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5 group">
-                    <span class="lang-en">Check My Readiness Now</span>
-                    <span class="lang-ms">Semak Kesediaan Data Saya</span>
+                    <span class="lang-en">Answer Screening Questionnaire</span>
+                    <span class="lang-ms">Isi Borang Penilaian Kelayakan</span>
                     <i class="fa-solid fa-arrow-right ml-3 transition-transform duration-200 group-hover:translate-x-1"></i>
                 </a>
             </div>
@@ -242,26 +252,23 @@
         </div>
     </footer>
 
-    <!-- INTERACTIVE TRANSLATION LOGIC -->
+    <!-- INTERACTIVE TRANSLATION ROUTINES -->
     <script>
         function setLanguage(lang) {
-            // Update document attribute toggles
             document.body.setAttribute('data-lang', lang);
             
-            // Stylize the active language switch buttons dynamically
             const btnMs = document.getElementById('btn-ms');
             const btnEn = document.getElementById('btn-en');
             
             if (lang === 'ms') {
-                btnMs.className = "px-3 py-1.5 rounded-full bg-brandTeal text-white shadow-sm transition-all duration-200";
-                btnEn.className = "px-3 py-1.5 rounded-full text-slate-600 hover:text-brandTeal transition-all duration-200";
+                btnMs.className = "px-4 py-1.5 rounded-full bg-brandTeal text-white font-semibold shadow-sm transition-all duration-200";
+                btnEn.className = "px-4 py-1.5 rounded-full text-slate-500 hover:text-brandTeal transition-all duration-200";
             } else {
-                btnEn.className = "px-3 py-1.5 rounded-full bg-brandTeal text-white shadow-sm transition-all duration-200";
-                btnMs.className = "px-3 py-1.5 rounded-full text-slate-600 hover:text-brandTeal transition-all duration-200";
+                btnEn.className = "px-4 py-1.5 rounded-full bg-brandTeal text-white font-semibold shadow-sm transition-all duration-200";
+                btnMs.className = "px-4 py-1.5 rounded-full text-slate-500 hover:text-brandTeal transition-all duration-200";
             }
         }
-        
-        // Initial setup default to English
+        // Initialize default view configuration
         setLanguage('en');
     </script>
 </body>
